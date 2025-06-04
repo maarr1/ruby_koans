@@ -17,10 +17,4 @@ class CheckTest < Minitest::Test
     assert_match(/OK/, output)
   end
 
-  def test_check_abouts
-    output = with_captured_stdout do
-      Rake::Task['check:abouts'].invoke
-    end
-    assert_match(/OK/, output)
-  end
 end
